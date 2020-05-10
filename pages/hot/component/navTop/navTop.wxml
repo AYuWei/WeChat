@@ -1,0 +1,14 @@
+<!-- 1. 导航条部分 -->
+<view class="top-nav">
+    <scroll-view scroll-x>
+       <view class="scroll-wrapper">
+        <view class="item" wx:for="{{navTap}}" wx:key="{{item.id}}">
+          <view 
+            class="{{ navTopactive == item.title ? 'active' : '' }}" 
+            data-navTopData="{{item}}"
+            bindtap="NavTopChange"
+          >{{item.title}}</view>
+        </view>
+       </view>
+    </scroll-view>
+  </view>

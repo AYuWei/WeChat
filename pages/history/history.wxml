@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="wrapper">
+    <view class="title">生肖匹对测试</view>
+    <view class="item">
+      <input class="inp1" type="text" placeholder="输入男生肖" bindinput="MenInput"></input>
+    </view>
+    <view class="item">
+      <input class="inp2" type="text" placeholder="输入女生肖" bindinput="WoMenInput"></input>
+    </view>
+    <view class="item">
+      <text bindtap="butChange">开始测试</text>
+    </view>
+    <view class="footer" wx:if="{{isResult}}">
+      <view class="title">勿冲动  仅作参考！</view>
+      <view class="content">
+        <view class="max">
+          <text class="men">男属：{{men}}</text>
+          <text class="women">女属：{{women}}</text>
+          <image src="../../image/love.png"></image>
+        </view>
+        <view class="text">
+          {{conter}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

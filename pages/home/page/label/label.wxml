@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="content" >
+    <view 
+    class="wrapper" 
+    wx:for="{{noteAll}}" 
+    wx:key="{{index}}"
+    bindtap="noteTop"
+    data-index="{{index}}"
+    data-item="{{item}}"
+    >
+      <view class="item">
+        <view class="text">
+          {{item.content}}
+        </view>
+        <view class="time">
+          {{
+            item.data
+          }}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

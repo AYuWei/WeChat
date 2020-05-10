@@ -1,0 +1,9 @@
+<view class="pupop" catchtap="add">
+<view class="wrapper">
+  <view class="cliad">
+    <text class="title">如环境则存在直接进入</text>
+    <input type="text" placeholder="请输入环境【Don't use Chinese】" bindinput="valChange"></input>
+    <text class="but" catchtap="addChange">添加/进入</text>
+  </view>
+</view>
+</view>

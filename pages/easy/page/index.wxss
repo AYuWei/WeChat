@@ -1,0 +1,44 @@
+.form{
+  width: 90%;
+}
+.form textarea{
+  width: 100%;
+padding-bottom: 20rpx;
+
+}
+.form .addImg{
+  width: 100%;
+  position: relative;
+  min-height: 200rpx;
+
+}
+.form .addImg image{
+  width: 200rpx;
+  height: 200rpx;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+}
+.form .addImg .add{
+  width: 200rpx;
+height: 200rpx;
+background-color: #e5e5e5;
+text-align: center;
+line-height: 182rpx;
+font-size: 100rpx;
+color: #999;
+display: inline-block;
+position: absolute;
+
+}
+.form .addDB{
+  width: 100%;
+height: 100rpx;
+line-height: 100rpx;
+text-align: center;
+background: #8bc34a;
+margin: 50rpx 0rpx;
+font-size: 45rpx;
+font-weight: 550;
+color: #fff;
+border-radius: 6rpx;
+}

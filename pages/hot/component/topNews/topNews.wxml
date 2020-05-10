@@ -1,0 +1,17 @@
+<!-- 置顶新闻 -->
+<view class="top-news">
+  <view 
+  class="item" 
+  data-news="{{item}}" 
+  wx:for="{{newsTitleArr}}" 
+  wx:key="{{index}}"
+  bindtap="TopNewsChange"
+  >
+    <view class="title">{{item.title}}</view>
+    <view class="footer">
+      <text class="topName">置顶</text>
+      <text class="author">{{item.author_name}}</text>
+      <text class="comment">{{item.comment.length}}评</text>
+    </view>
+  </view>
+</view>

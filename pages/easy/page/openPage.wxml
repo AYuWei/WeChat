@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="wrapper">
+    <view wx:if="{{pagedata.imgarr != []}}" class="img" wx:for="{{pagedata.imgarr}}">
+      <image data-index="{{index}}" bindtap="imgChange" src="{{item.url}}"></image>
+    </view>
+    <view class="content">
+      {{pagedata.content}}
+    </view>
+    <view class="time">
+      {{pagedata.data}}
+    </view>
+  </view>
+</view>

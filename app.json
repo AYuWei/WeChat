@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/hot/hot",
+    "pages/easy/easy",
+   
+    "pages/hot/page/newsPage",
+    "pages/home/home",
+    "pages/history/history",
+    "pages/home/popup/index",
+    "pages/home/page/setingPage/setingPage",
+    "pages/home/page/biaoqian",
+    "pages/home/page/label/label",
+    "pages/home/page/task/task",
+    "pages/home/page/collect/collect",
+    "pages/easy/page/index",
+    "pages/easy/page/openPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MaxBoss",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#e5e5e5",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热闻",
+        "iconPath": "/image/hotone.png",
+        "selectedIconPath": "/image/hottwo.png"
+      },
+      {
+        "pagePath": "pages/easy/easy",
+        "text": "轻松一刻",
+        "iconPath": "/image/easyone.png",
+        "selectedIconPath": "/image/easytwo.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "渊源",
+        "iconPath": "/image/yuanyuan22.png",
+        "selectedIconPath": "/image/yuanyuan1.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/image/homeone.png",
+        "selectedIconPath": "/image/hometwo.png"
+      }
+    ]
+  }
+}

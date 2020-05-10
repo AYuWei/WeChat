@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav-top" : "/pages/hot/component/navTop/navTop",
+    "top-news" : "/pages/hot/component/topNews/topNews",
+    "news-list" : "/pages/hot/component/newsList/newsList"
+  },
+  "navigationBarTitleText": "热闻"
+}

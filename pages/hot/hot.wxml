@@ -1,0 +1,11 @@
+<view class="container-hot">
+  <!-- 头部导航条 -->
+  <nav-top bind:pageChange="pageChange"></nav-top>
+  <!-- 主内容区域 -->
+  <scroll-view class="scroll-view" scroll-y scroll-x>
+     <!-- 要闻置顶新闻 -->
+     <top-news bind:TopNewsChange="TopNewsChange"></top-news>
+     <!-- 新闻列表 -->
+     <news-list bind:NewsListChange="NewsListChange" data="{{currentChannel}}" pageIndex="1"></news-list>
+  </scroll-view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "poputpage" : "./popup/index"
+  },
+  "navigationBarTitleText": "主页"
+}

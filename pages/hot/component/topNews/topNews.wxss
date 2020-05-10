@@ -1,0 +1,31 @@
+.top-news{
+  width: 100%;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.item{
+  height: 100rpx;
+  margin: 20rpx
+}
+.item .title{
+  font-weight: 540;
+  font-size: 36rpx;  
+  color: #000;
+  margin: 10rpx 0rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+}
+.item .footer {
+  width: 100%;
+  color: #999;
+  font-size: 28rpx;
+}
+.item .footer .topName{
+  margin-right: 33rpx;
+  color: rgba(3, 29, 175, 0.912);
+}
+
+.item .footer .comment{
+  margin: 0 35rpx;
+}

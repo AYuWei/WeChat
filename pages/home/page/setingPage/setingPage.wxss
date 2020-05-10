@@ -1,0 +1,37 @@
+.wrapper{
+  height: 100%;
+  background-color: #e5e5e5;
+  width: 100%;
+}
+.wrapper .item{
+  position: relative;
+min-height: 100rpx;
+line-height: 100rpx;
+padding: 0rpx 20rpx;
+font-size: 35rpx;
+background-color: #fff;
+margin: 20rpx 0rpx;
+}
+.wrapper .item .content{
+  position: absolute;
+  right: 60rpx;
+}
+.wrapper .item .child{
+  position: relative;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.wrapper .item .child switch{
+  position: absolute;
+  right: 0rpx;
+}
+
+.author{
+  position: absolute;
+bottom: 0rpx;
+text-align: center;
+width: 100%;
+line-height: 50rpx;
+font-size: 24rpx;
+color: #000;
+
+}

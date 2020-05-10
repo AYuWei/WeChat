@@ -1,0 +1,119 @@
+.pageNews{
+  width: 100%;
+}
+.title{
+  width: 100%;
+padding: 0rpx 20rpx;
+box-sizing: border-box;
+font-size: 45rpx;
+font-weight: 530;
+
+}
+.header{
+  position: relative;
+  height: 80rpx;
+line-height: 80rpx;
+display: flex;
+padding: 0 20rpx;
+font-size: 28rpx;
+color: #666;
+
+}
+
+.header .right{
+  right: 30rpx;
+  position: absolute;
+
+}
+.header .author_name{
+  padding-right: 20rpx;
+}
+.header .right .attention{
+  color: #fff;
+  background: #8bc34a;
+  display: inline;
+  padding: 10rpx 25rpx;
+  border-radius: 50rpx;
+}
+.content{
+  padding: 25rpx;
+  text-align: justify;
+  
+}
+.content .main .list{
+  padding:  20rpx 0 30rpx 0;
+}
+.content .subhead{
+  width: 100%;
+height: 80rpx;
+line-height: 80rpx;
+font-size: 28rpx;
+color: #666;
+
+}
+.footer{
+  border-top: 2px solid #e5e5e5;
+  padding: 20rpx;
+  padding-bottom: 100rpx;
+}
+.footer .footer-title{
+  font-size: 41rpx;
+font-weight: 550;
+height: 80rpx;
+line-height: 80rpx;
+margin-bottom: 20rpx;
+display: flex;
+
+}
+.footer .footer-number{
+  font-size: 30rpx;
+  color: #666;
+}
+.footer .comment-title{
+  display: flex;
+height: 100rpx;
+line-height: 100rpx;
+position: relative;
+}
+.footer .author-img{
+  width: 80rpx;
+height: 80rpx;
+border-radius: 50%;
+margin-right: 31rpx;
+
+}
+.footer .comment-like{
+    line-height: 60rpx;
+  position: absolute;
+  right: 0rpx;
+  display: flex;
+  text-align: center;
+  text-justify: center;
+  padding-top: 20rpx;
+
+}
+.footer .like-img{
+  height: 50rpx;
+  width: 50rpx;
+}
+.footer .comment-author{
+  font-weight: bold;
+}
+.footer .comment-content{
+  padding-left: 105rpx;
+  text-align: justify;
+  padding-right: 20rpx;
+}
+.footer .footer-item{
+  padding-bottom: 60rpx;
+border-bottom: 1rpx solid #e5e5e5;
+padding-top: 30rpx;
+
+}
+.footer .footer-item:nth-last-child(1){
+  border-bottom: 1rpx solid transparent;
+}
+.thumbnailimg{
+  width: 100%;
+  margin: 20rpx 0rpx 50rpx 0rpx;
+}

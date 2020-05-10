@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="header">
+    <view class="img">
+      <image src="{{user_image}}"></image>
+      <!-- <text class="title" bindtap="addUserMessage">{{user_title}}</text> -->
+      <button bindgetuserinfo="addUserMessage" open-type="getUserInfo">{{user_title}}</button>
+    </view>
+    <view class="content">
+      <view class="{{listActive !== index ? 'item' : 'item active'}}"
+       wx:for="{{list}}" 
+       data-index="{{index}}" 
+       data-item="{{item}}"
+       bindtap="listChange"
+       wx:key="{{index}}"
+       >
+        <image src="{{item.src}}"></image>
+        <text class="title">{{item.title}}</text>
+        <text wx:if="{{index === 0}}" class="content">{{huanjing}}</text>
+        <image src="{{item.right}}" class="right"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{popup}}" class="popup" catchtap="popupChange">
+  <poputpage bind:addHuanJing="addHuanJing" />
+</view>

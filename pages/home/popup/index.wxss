@@ -1,0 +1,40 @@
+
+.wrapper{
+  width: 550rpx;
+height: 290rpx;
+background: #fff;
+margin-left: 50%;
+margin-top: 50%; 
+transform: translateX(-50%);
+border-radius: 10rpx;
+}
+.wrapper .title{
+  line-height: 80rpx;
+  color: #999;
+  width: 550rpx;
+  text-align: center;
+  display : inline-block;
+
+}
+.wrapper input{
+  border: 1rpx solid #999;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 430rpx;
+  padding-left: 30rpx;
+  margin: auto;
+  font-size: 27rpx;
+}
+.wrapper .but{
+  width: 200rpx;
+height: 70rpx;
+display: inline-block;
+background: #8bc34a;
+line-height: 70rpx;
+text-align: center;
+border-radius: 9rpx;
+margin-left: 50%;
+transform: translateX(-50%);
+margin-top: 30rpx;
+
+}

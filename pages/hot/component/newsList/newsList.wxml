@@ -1,0 +1,20 @@
+<!-- 新闻列表 -->
+<view class="news-list">
+  <view class="news-item"
+    wx:for="{{newsListArr}}"
+    wx:key="{{item.uniquekey}}"  
+    bindtap="NewsListChange"
+    data-data="{{item}}"
+  >
+    <view class="left">
+      <view class="title">{{item.title}}</view>
+      <view class="footer">
+        <text class="author-name">{{item.author_name}}</text>
+        <text class="time">{{item.data}}</text>
+      </view>
+    </view>
+    <view class="right">
+      <image src="{{item.thumbnail_pic_s}}"></image>
+    </view>
+  </view>
+</view>

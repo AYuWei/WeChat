@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="currentTitle">
+    <text class="{{current === 'img' ? 'active' : ''}}" bindtap="ChangeImg">图片集</text>
+    <text class="{{current === 'note' ? 'active' : ''}}"  bindtap="ChangeVideo">记录集</text>
+  </view>
+  <view class="content" wx:if="{{current === 'img'}}">
+    <image 
+      data-item="{{item}}" 
+      data-index="{{index}}" 
+      bindtap="ImgChange" 
+      catchlongtap="ImgLongTap"
+      wx:for="{{imageAll}}" 
+      class="{{item.url == '' ? 'lash' : 'img'}}" 
+      wx:key="{{index}}" src="{{item.url}}"></image>
+  </view>
+  <view class="content" wx:else>
+    <view 
+    class="wrapper" 
+    wx:for="{{noteAll}}" 
+    wx:key="{{index}}"
+    bindtap="noteTop"
+    catchlongtap="NoteLongTap"
+    data-index="{{index}}"
+    data-item="{{item}}"
+    >
+      <view class="{{isNote !== index ? 'item' : 'item active'}}" >
+        <view class="text">
+          {{item.content}}
+        </view>
+        <view class="time">
+          {{
+            item.data
+          }}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="add">
+    <image bindtap="{{isdelete =='add' ? 'addChange' : 'deleteChange'}}" src="{{isdelete =='add' ? '../../image/add.png' : '../../image/delete.png'}}"></image>
+  </view>
+</view>

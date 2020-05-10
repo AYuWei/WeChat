@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="form">
+    <textarea maxlength="-1" placeholder="这一刻你的想法..." bindinput="textChange">
+    
+    </textarea>
+    <view class="addImg">
+      <image 
+        wx:for="{{imgArr}}" 
+        wx:key="{{index}}"
+        src="{{item.url}}"
+        ></image>
+      <view class="add" bindtap="AddChange">+</view>
+    </view>
+    <view class="addDB" bindtap="BaoCuenChange">
+      <text>保存</text>
+    </view>
+  </view>
+</view>

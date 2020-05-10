@@ -1,0 +1,40 @@
+<view class="container">
+	<view class="wrapper">
+		<view class="item">
+			<text class="title">账号</text>
+			<text class="content">{{userName}}</text>
+		</view>
+		<view class="item">
+			<view class="child">
+        <text class="title">自动同步</text>
+        <switch checked type="switch"></switch>
+      </view>
+      <view class="child">
+        <text class="title">仅在有Wi-Fi时自动同步</text>
+        <switch type="switch"></switch>
+      </view>
+		</view>
+    <view class="item">
+			<text class="title">离线缓存</text>
+		</view>
+		<view class="item">
+			<text class="title">设备管理</text>
+		</view>
+		<view class="item">
+			<text class="title">隐私与安全</text>
+		</view>
+		<view class="item">
+        <view class="child">
+          <text class="title">关于</text>
+        </view>
+        <view class="child">
+          <text class="title">意见反馈</text>
+        </view>
+         <view class="child">
+          <text class="title">检测更新</text>
+          <text class="content">1.1.2</text>
+        </view>
+		</view>
+    <text class="author">宇威科技有限公司</text>
+	</view>
+</view>

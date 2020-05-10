@@ -1,0 +1,44 @@
+<view class="pageNews">
+  <view class="title">{{list.title}}</view>
+  <view class="header">
+    <view class="left">
+      <text class="author_name">{{list.author_name}}</text>
+      <text class="time">{{list.time}}</text>
+    </view>
+    <view class="right">
+      <view class="attention">+关注</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="main">
+      <view  wx:if="{{list.id_name == 'NewsTop'}}" wx:for="{{list.content}}" wx:key="{{index}}" class="list">
+        {{item}}
+      </view>
+      <view wx:if="{{list.id_name === 'NewsList'}}">
+        <image class="thumbnailimg" src="{{list.thumbnail_pic_s}}"></image>
+        <image class="thumbnailimg" src="{{list.thumbnail_pic_s03}}"></image>
+        <image class="thumbnailimg" src="{{list.thumbnail_pic_s02}}"></image>
+      </view>
+    </view>
+    <view class="subhead" >原标题：{{list.title}}</view>
+  </view>
+  <view class="footer" wx:if="{{list.id_name == 'NewsTop'}}">
+    <view class="footer-title">
+      全部评论
+     <text class="footer-number">（{{list.comment.length}}）</text>  
+    </view>
+    <view class="footer-comment">
+      <view class="footer-item" wx:for="{{list.comment}}" wx:key="{{index}}">
+        <view class="comment-title">
+          <image class="author-img" src="{{item.img}}"></image>
+          <text class="comment-author">{{item.author}}</text>
+          <view class="comment-like">
+            {{item.praise}}
+            <image class="like-img" src="../../../image/like.png"></image>  
+          </view>
+        </view>
+        <view class="comment-content">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+</view>
